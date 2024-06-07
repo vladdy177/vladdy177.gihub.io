@@ -1,0 +1,151 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Life Journal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/icon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!--  <link rel="manifest" href="site.webmanifest">-->
+  <meta name="theme-color" content="#fafafa">
+  <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+  <main class="container">
+    <section class="left">
+      <div class="calendar">
+        <div class="month">
+          <i class="fa fa-angle-left prev"></i>
+          <!--Updating month and year in JS-->
+          <div class="date"></div>
+          <i class="fa fa-angle-right next"></i>
+        </div>
+        <div class="weekdays">
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+          <div>Sun</div>
+        </div>
+        <div class="days">
+          <!--Adding days with JS-->
+        </div>
+        <div class="goto-today">
+          <div class="goto">
+            <label>
+              <input type="text" placeholder="mm/yyyy" class="date-input">
+            </label>
+            <button class="goto-btn">Go</button>
+          </div>
+          <button class="today-btn">Today</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="right">
+      <div class="today-date">
+        <div class="calendar-day">Mon</div>
+        <div class="calendar-date">03 June 2024</div>
+      </div>
+      <div class="todo-list">
+        <h2 class="section-header" id="goals-header">Monthly goals</h2>
+        <div class="goals">
+          <!--Adding goals with JS-->
+        </div>
+      <h2 class="section-header" id="habits-header">Habits</h2>
+        <div class="habits">
+          <!--Adding habits with JS-->
+        </div>
+        <h2 class="section-header" id="highlight-header">Day highlight</h2>
+        <div class="highlights">
+          <!--Adding highlight with JS-->
+        </div>
+      </div>
+
+      <div class="add-wrapper add-habit-wrapper">
+        <div class="add-header">
+          <div class="title">Add habit</div>
+          <i class="fas fa-times close"></i>
+        </div>
+        <div class="add-body">
+          <div class="add-input">
+              <input type="text" placeholder="Habit name" id="habit-name">
+          </div>
+        </div>
+        <div class="add-footer">
+          <button class="add-btn" id="add-habit-btn">Add new habit</button>
+        </div>
+      </div>
+
+      <div class="add-wrapper add-goal-wrapper">
+        <div class="add-header">
+          <div class="title">Add goal</div>
+          <i class="fas fa-times close"></i>
+        </div>
+        <div class="add-body">
+          <div class="add-input">
+            <input type="text" placeholder="Goal name" id="goal-name">
+          </div>
+        </div>
+        <div class="add-footer">
+          <button class="add-btn" id="add-goal-btn">Add new goal</button>
+        </div>
+      </div>
+
+      <div class="add-wrapper add-highlight-wrapper">
+        <div class="add-header">
+          <div class="title">Add day highlight</div>
+          <i class="fas fa-times close"></i>
+        </div>
+        <div class="add-body">
+          <div class="add-input">
+            <input type="text" placeholder="Day highlight" id="highlight-name">
+          </div>
+        </div>
+        <div class="add-footer">
+          <button class="add-btn" id="add-highlight-btn">Add new highlight</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="add-buttons-footer">
+      <button class="add-todo-btn" id="add-goal">
+        <i class="fas fa-plus"></i>
+      </button>
+
+      <button class="add-todo-btn" id="add-habit">
+        <i class="fas fa-plus"></i>
+      </button>
+
+      <button class="add-todo-btn" id="add-highlight">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+
+  </main>
+
+</body>
+
+</html>
